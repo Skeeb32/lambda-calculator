@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { operators } from "../../../data";
-import OperatorButton from ".//OperatorButton";
+import OperatorButton from "./OperatorButton";
 // import { utimesSync } from "fs";
 
 //import any components needed
@@ -16,7 +16,7 @@ const Operators = () => {
   return (
     <div className="operators">
       {items.map((item, index) => 
-      (<OperatorButton key={index} operatorData={item} />)
+      (<OperatorButton key={index} operatorData={item.char} />)
       )}
     </div>
   );

@@ -16,7 +16,7 @@ const Specials = () => {
   return (
     <div className="specials">
       {items.map((item, index) =>
-      (<SpecialButton key={index} specialsData={item} />)
+      (<SpecialButton key={index} specialData={item} />)
   )}
     </div>
   );
